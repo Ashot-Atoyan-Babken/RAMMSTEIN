@@ -14,12 +14,11 @@ return new class extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
             $table->string('song_name');
+            $table->unsignedBigInteger('album_id')->nullable();
             $table->timestamps();
             $table->softDeletes();
-            $table->unsignedBigInteger('category_id')->nullable();
-
-            $table->index('category_id', 'post_category_idx');
-            $table->foreign('category_id', 'post_category_fk')->on('songs')->references('id');
+            $table->index('album_id', 'song_album_idx');
+            $table->foreign('album_id', 'song_album_fk')->on('songs')->references('id');
         });
     }
 

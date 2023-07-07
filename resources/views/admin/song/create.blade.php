@@ -55,7 +55,7 @@
                                         <option value="{{$album->id}}">{{$album->title}}</option>
                                     @endforeach
                                 </select>
-                                @error('category_id')
+                                @error('album_id')
                                 <div class="text-danger">{{$message}}</div>
                                 @enderror
                             </div>

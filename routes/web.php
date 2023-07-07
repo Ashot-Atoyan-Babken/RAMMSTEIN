@@ -32,4 +32,8 @@ Route::patch('/song/{song}', \App\Http\Controllers\Admin\Song\UpdateController::
 Route::delete('/song/{song}', \App\Http\Controllers\Admin\Song\DeleteController::class)->name('song.destroy');
 
 
-Route::get('/login', \App\Http\Controllers\Auth\LoginController::class)->name('login');
+//Route::get('/login', \App\Http\Controllers\Auth\LoginController::class)->name('login');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
