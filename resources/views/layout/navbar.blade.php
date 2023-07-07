@@ -46,7 +46,7 @@
     </nav>
 </header>
 @yield('content')
-<div class="footer d-flex justify-content-between px-3 align-items-center">
+<div class="footer d-flex justify-content-between px-3 align-items-center my-4">
     <div class="logo d-flex align-items-center">
         <img src="{{asset('storage/images/'.'Rammstein_wallpaper_logo.png')}}" height="60" alt="Логотип">
         <p style="color: white;font-weight: 900;">RAMMSTEIN</p>

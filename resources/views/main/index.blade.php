@@ -8,10 +8,164 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{--    <link rel="stylesheet" href="{{asset('css/style.css')}}">--}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Rammstein</title>
 </head>
+<style>
+    .border {
+        height: 369px;
+        width: 290px;
+        background: transparent;
+        border-radius: 10px;
+        transition: border 1s;
+        position: relative;
+    }
 
+    .border:hover {
+        border: 1px solid #fff;
+    }
+
+    .card {
+        height: 379px;
+        width: 300px;
+        background: #808080;
+        border-radius: 10px;
+        transition: background 0.8s;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 70px 63px -60px #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .card0 {
+        background: url("https://i.pinimg.com/564x/c8/37/4d/c8374d6895e83eb1ea7ea86824411444.jpg") center center no-repeat;
+        background-size: 300px;
+    }
+
+    .card0:hover {
+        background: url("https://i.pinimg.com/564x/c8/37/4d/c8374d6895e83eb1ea7ea86824411444.jpg") left center no-repeat;
+        background-size: 600px;
+    }
+
+    .card0:hover h2 {
+        opacity: 1;
+    }
+
+
+    .card0:hover .fa {
+        opacity: 1;
+    }
+
+    .card3 {
+        background: url("https://i.pinimg.com/564x/c1/2c/43/c12c43aabab1d1ae39f107f8dfe94a6e.jpg") center center no-repeat;
+        background-size: 400px;
+    }
+
+    .card3:hover {
+        background: url("https://i.pinimg.com/564x/c1/2c/43/c12c43aabab1d1ae39f107f8dfe94a6e.jpg") left center no-repeat;
+        background-size: 600px;
+    }
+
+    .card3:hover h2 {
+        opacity: 1;
+    }
+
+
+    .card3:hover .fa {
+        opacity: 1;
+    }
+
+    .card4 {
+        background: url("https://i.pinimg.com/564x/61/50/58/61505872fce2820366f8059e6790c6f4.jpg") center center no-repeat;
+        background-size: 300px;
+    }
+
+    .card4:hover {
+        background: url("https://i.pinimg.com/564x/61/50/58/61505872fce2820366f8059e6790c6f4.jpg") left center no-repeat;
+        background-size: 600px;
+    }
+
+    .card4:hover h2 {
+        opacity: 1;
+    }
+
+
+    .card4:hover .fa {
+        opacity: 1;
+    }
+
+    .card5 {
+        background: url("https://i.pinimg.com/564x/51/4f/f8/514ff8c1b370285c0dc9c76d7e72de28.jpg") center center no-repeat;
+        background-size: 400px;
+
+    }
+
+    .card5:hover {
+        background: url("https://i.pinimg.com/564x/51/4f/f8/514ff8c1b370285c0dc9c76d7e72de28.jpg") left center no-repeat;
+        background-size: 600px;
+    }
+
+    .card5:hover h2 {
+        opacity: 1;
+    }
+
+
+    .card5:hover .fa {
+        opacity: 1;
+    }
+
+
+    .card1 {
+        background: url("https://i.pinimg.com/564x/49/f2/3e/49f23e64bfc9d32a38f57a065824c0e0.jpg") center center no-repeat;
+        background-size: 300px;
+    }
+
+    .card1:hover {
+        background: url("https://i.pinimg.com/564x/49/f2/3e/49f23e64bfc9d32a38f57a065824c0e0.jpg") left center no-repeat;
+        background-size: 500px;
+    }
+
+    .card1:hover h2 {
+        opacity: 1;
+    }
+
+    .card1:hover .fa {
+        opacity: 1;
+    }
+
+    .card2 {
+        background: url("https://i.pinimg.com/564x/7a/97/3f/7a973f9f2d1a0988c9a122f2a65564b6.jpg") center center no-repeat;
+        background-size: 300px;
+    }
+
+    .card2:hover {
+        background: url("https://i.pinimg.com/564x/7a/97/3f/7a973f9f2d1a0988c9a122f2a65564b6.jpg") left center no-repeat;
+        background-size: 600px;
+    }
+
+    .card2:hover h2 {
+        opacity: 1;
+    }
+
+    .card2:hover .fa {
+        opacity: 1;
+    }
+
+    h2 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #fff;
+        margin: 20px;
+        opacity: 0;
+        transition: opacity 1s;
+        text-transform: capitalize;
+    }
+
+
+</style>
 <body>
 <main>
     <div class="wrapper">
@@ -24,11 +178,11 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner" style="border-radius: 15px">
-                    <div class="carousel-item active">
+                    <div class="carousel-item ">
                         <img src="{{asset('storage/main/img/1.jpg')}}" class="d-block w-100" alt="Image 1"
                              style="height:620px">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <img src="{{asset('storage/main/img/2.png')}}" class="d-block w-100" alt="Image 2"
                              style="height:620px">
                     </div>
@@ -51,7 +205,8 @@
             </div>
         </div>
     </div>
-    <div class="wrapper" style="margin-top: 150px;">
+    <div class="container" style="border: 2px solid #ffffff; margin-top: 150px; margin-bottom: 10px;"></div>
+    <div class="wrapper">
         <div class="container">
             <div class="d-flex justify-content-center">
                 <div style="color: white">
@@ -101,7 +256,7 @@
             </p>
         </div>
     </div>
-    <hr style="border: 5px dashed #ffffff;">
+    <div class="container my-4" style="border: 2px solid #ffffff;"></div>
     <div class="wrapper">
         <div class="container">
             <div class="d-flex justify-content-center align-items-center">
@@ -129,8 +284,8 @@
 
                 </div>
             </div>
-            <div class="text-justify" style="color: white;width: 960px;" >
-                <p >В начале 2005 года последовал тур вместе с группой Apocalyptica, после
+            <div class="text-justify" style="color: white;width: 960px;">
+                <p>В начале 2005 года последовал тур вместе с группой Apocalyptica, после
                     чего вышел сингл «Keine
                     Lust» и клип к нему. В сентябре выпускается клип, а затем и сингл «Benzin», одноимённая песня с
                     которого войдёт на следующий, пятый альбом группы. В следующем месяце выходит сам альбом,
@@ -142,6 +297,48 @@
 
         </div>
     </div>
+    <div class="container my-4" style="border: 2px solid #ffffff;"></div>
+    <div class="wrapper">
+        <h1 class="text-center text-white my-5">Состав</h1>
+        <div class="container mb-4"
+             style=" display: flex;  justify-content: space-evenly;  align-items: center;  margin: 0 auto">
+            <div class="card card0">
+                <div class="border">
+                    <h2>Till Lindemann</h2>
+                </div>
+            </div>
+            <div class="card card1">
+                <div class="border">
+                    <h2>richard kruspe</h2>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="border">
+                    <h2>paul landers</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container"
+             style="display: flex;  justify-content: space-evenly;  align-items: center;  margin: 0 auto">
+            <div class="card card3">
+                <div class="border">
+                    <h2>oliver riedel</h2>
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="border">
+                    <h2>Christian Lorenz</h2>
+                </div>
+            </div>
+            <div class="card card5">
+                <div class="border">
+                    <h2>christoph schneider</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <i class="fa-solid fa-user"></i>
+
 </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -202,9 +399,10 @@
         // Запускаем первый шаг анимации
         requestAnimationFrame(animationStep);
     }
+
     let pixels = document.querySelector('.pixels')
     document.onmousemove = function () {
-        document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', '<img src = "{{asset('storage/images/'.'Rammstein_wallpaper_logo.png')}}" id = "heart" > ')
+        document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', '<img src = "{{asset('storage/main/img/svg/'.'380px-Rammstein_logo_2.svg')}}" id = "heart" > ')
         let heart = document.querySelector('#heart');
         heart.style.position = "fixed";
         document.onmousemove = function (event) {
