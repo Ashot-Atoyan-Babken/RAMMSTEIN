@@ -8,164 +8,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {{--    <link rel="stylesheet" href="{{asset('css/style.css')}}">--}}
+    <link rel="stylesheet" href="{{asset('css/card.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Rammstein</title>
 </head>
-<style>
-    .border {
-        height: 369px;
-        width: 290px;
-        background: transparent;
-        border-radius: 10px;
-        transition: border 1s;
-        position: relative;
-    }
 
-    .border:hover {
-        border: 1px solid #fff;
-    }
-
-    .card {
-        height: 379px;
-        width: 300px;
-        background: #808080;
-        border-radius: 10px;
-        transition: background 0.8s;
-        overflow: hidden;
-        background: #000;
-        box-shadow: 0 70px 63px -60px #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .card0 {
-        background: url("https://i.pinimg.com/564x/c8/37/4d/c8374d6895e83eb1ea7ea86824411444.jpg") center center no-repeat;
-        background-size: 300px;
-    }
-
-    .card0:hover {
-        background: url("https://i.pinimg.com/564x/c8/37/4d/c8374d6895e83eb1ea7ea86824411444.jpg") left center no-repeat;
-        background-size: 600px;
-    }
-
-    .card0:hover h2 {
-        opacity: 1;
-    }
-
-
-    .card0:hover .fa {
-        opacity: 1;
-    }
-
-    .card3 {
-        background: url("https://i.pinimg.com/564x/c1/2c/43/c12c43aabab1d1ae39f107f8dfe94a6e.jpg") center center no-repeat;
-        background-size: 400px;
-    }
-
-    .card3:hover {
-        background: url("https://i.pinimg.com/564x/c1/2c/43/c12c43aabab1d1ae39f107f8dfe94a6e.jpg") left center no-repeat;
-        background-size: 600px;
-    }
-
-    .card3:hover h2 {
-        opacity: 1;
-    }
-
-
-    .card3:hover .fa {
-        opacity: 1;
-    }
-
-    .card4 {
-        background: url("https://i.pinimg.com/564x/61/50/58/61505872fce2820366f8059e6790c6f4.jpg") center center no-repeat;
-        background-size: 300px;
-    }
-
-    .card4:hover {
-        background: url("https://i.pinimg.com/564x/61/50/58/61505872fce2820366f8059e6790c6f4.jpg") left center no-repeat;
-        background-size: 600px;
-    }
-
-    .card4:hover h2 {
-        opacity: 1;
-    }
-
-
-    .card4:hover .fa {
-        opacity: 1;
-    }
-
-    .card5 {
-        background: url("https://i.pinimg.com/564x/51/4f/f8/514ff8c1b370285c0dc9c76d7e72de28.jpg") center center no-repeat;
-        background-size: 400px;
-
-    }
-
-    .card5:hover {
-        background: url("https://i.pinimg.com/564x/51/4f/f8/514ff8c1b370285c0dc9c76d7e72de28.jpg") left center no-repeat;
-        background-size: 600px;
-    }
-
-    .card5:hover h2 {
-        opacity: 1;
-    }
-
-
-    .card5:hover .fa {
-        opacity: 1;
-    }
-
-
-    .card1 {
-        background: url("https://i.pinimg.com/564x/49/f2/3e/49f23e64bfc9d32a38f57a065824c0e0.jpg") center center no-repeat;
-        background-size: 300px;
-    }
-
-    .card1:hover {
-        background: url("https://i.pinimg.com/564x/49/f2/3e/49f23e64bfc9d32a38f57a065824c0e0.jpg") left center no-repeat;
-        background-size: 500px;
-    }
-
-    .card1:hover h2 {
-        opacity: 1;
-    }
-
-    .card1:hover .fa {
-        opacity: 1;
-    }
-
-    .card2 {
-        background: url("https://i.pinimg.com/564x/7a/97/3f/7a973f9f2d1a0988c9a122f2a65564b6.jpg") center center no-repeat;
-        background-size: 300px;
-    }
-
-    .card2:hover {
-        background: url("https://i.pinimg.com/564x/7a/97/3f/7a973f9f2d1a0988c9a122f2a65564b6.jpg") left center no-repeat;
-        background-size: 600px;
-    }
-
-    .card2:hover h2 {
-        opacity: 1;
-    }
-
-    .card2:hover .fa {
-        opacity: 1;
-    }
-
-    h2 {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        color: #fff;
-        margin: 20px;
-        opacity: 0;
-        transition: opacity 1s;
-        text-transform: capitalize;
-    }
-
-
-</style>
 <body>
 <main>
     <div class="wrapper">
@@ -179,19 +26,19 @@
                 </ol>
                 <div class="carousel-inner" style="border-radius: 15px">
                     <div class="carousel-item ">
-                        <img src="{{asset('storage/main/img/1.jpg')}}" class="d-block w-100" alt="Image 1"
+                        <img src="{{asset('storage/main/img/1.jpg')}}" class="d-block w-100 cii" alt="Image 1"
                              style="height:620px">
                     </div>
                     <div class="carousel-item active">
-                        <img src="{{asset('storage/main/img/2.png')}}" class="d-block w-100" alt="Image 2"
+                        <img src="{{asset('storage/main/img/2.png')}}" class="d-block w-100 cii" alt="Image 2"
                              style="height:620px">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{asset('storage/main/img/3.jpg')}}" class="d-block w-100" alt="Image 3"
+                        <img src="{{asset('storage/main/img/3.jpg')}}" class="d-block w-100 cii" alt="Image 3"
                              style="height:620px">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{asset('storage/main/img/4.jpg')}}" class="d-block w-100" alt="Image 4"
+                        <img src="{{asset('storage/main/img/4.jpg')}}" class="d-block w-100 cii" alt="Image 4"
                              style="height:620px">
                     </div>
                 </div>
@@ -207,11 +54,11 @@
     </div>
     <div class="container" style="border: 2px solid #ffffff; margin-top: 150px; margin-bottom: 10px;"></div>
     <div class="wrapper">
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <div style="color: white">
-                    <h1>Предыстория группы</h1>
-                    <p class="w-75 text-justify">Истоки Rammstein лежат в периоде, предшествовавшем и сопутствовавшем
+        <div class="container text-white">
+            <h1 class="text-center">Предыстория группы</h1>
+            <div class="first d-flex justify-content-center">
+                <div class="first_text" style="color: white">
+                    <p class="w-100 text-justify">Истоки Rammstein лежат в периоде, предшествовавшем и сопутствовавшем
                         объединению Германии.
                         Сооснователь группы и ведущий гитарист Рихард Круспе свою музыкальную карьеру начал в 1989 году
                         в Западной Германии в группе Orgasm Death Gimmick, переехав туда из Шверина ,
@@ -222,7 +69,7 @@
                         Die Firma соответственно. В этом составе (с Линдеманном как вокалистом и сочинителем песен) они
                         стали играть под названием Rammstein.
                     </p>
-                    <p class="w-75 text-justify">В 1993 году, когда у группы даже не было названия, она выиграла на
+                    <p class="w-100 text-justify">В 1993 году, когда у группы даже не было названия, она выиграла на
                         Берлинском рок-фестивале право
                         на запись в профессиональной студии. 19 февраля 1994 года Rammstein с песнями «Das alte
                         Leid», «Seemann», «Weißes Fleisch», «Rammstein», «Du Riechst So Gut» и «Schwarzes Glas»
@@ -236,8 +83,8 @@
                     </p>
 
                 </div>
-                <div>
-                    <img src="{{asset('storage/main/img/wp2879797-rammstein-wallpapers.jpg')}}"
+                <div class="first_img">
+                    <img class="img_first" src="{{asset('storage/main/img/wp2879797-rammstein-wallpapers.jpg')}}"
                          alt="wp2879797-rammstein-wallpapers.jpg" style="width: 500px; height: 100%;">
                 </div>
             </div>
@@ -258,12 +105,15 @@
     </div>
     <div class="container my-4" style="border: 2px solid #ffffff;"></div>
     <div class="wrapper">
-        <div class="container">
-            <div class="d-flex justify-content-center align-items-center">
-                <div><img src="{{asset('storage/main/img/wp2879754.jpg')}}" style="width: 500px;" alt=""></div>
+        <div class="container text-white">
+            <h1 class="text-center">Последующая карьера</h1>
+
+            <div class="sec d-flex justify-content-center align-items-center">
+                <div class="sec_img">
+                    <img class="img_sec" src="{{asset('storage/main/img/wp2879754.jpg')}}" style="width: 500px;" alt="">
+                </div>
                 <div style="color: white">
-                    <h1>Последующая карьера</h1>
-                    <p class="text-justify w-75">Несколько лет фанаты ждали следующей студийной
+                    <p class="text-justify w-100">Несколько лет фанаты ждали следующей студийной
                         работы группы. Такой большой перерыв породил
                         множество разных слухов, в основном о распаде группы. Однако в 2000 году Rammstein садятся в
                         студию записывать новый альбом. В 2001 году вышел третий студийный альбом под названием Mutter,
@@ -273,7 +123,7 @@
                         видеоклипы к ним. В 2003 году, к десятилетию своего существования, Rammstein выпускают DVD
                         Lichtspielhaus c полным собранием клипов и несколькими концертными записями в хорошем
                         качестве.</p>
-                    <p class="text-justify w-75">В начале 2004 года появилась достоверная информация о скором выходе
+                    <p class="text-justify w-100">В начале 2004 года появилась достоверная информация о скором выходе
                         нового альбома. Через
                         несколько месяцев после этого вышли синглы «Mein Teil» и «Amerika». И, наконец, в начале осени
                         был выпущен четвёртый альбом, названный Reise, Reise, который очень отличается от стилистики
@@ -284,7 +134,7 @@
 
                 </div>
             </div>
-            <div class="text-justify" style="color: white;width: 960px;">
+            <div class="txt text-justify" style="color: white;">
                 <p>В начале 2005 года последовал тур вместе с группой Apocalyptica, после
                     чего вышел сингл «Keine
                     Lust» и клип к нему. В сентябре выпускается клип, а затем и сингл «Benzin», одноимённая песня с
@@ -300,7 +150,7 @@
     <div class="container my-4" style="border: 2px solid #ffffff;"></div>
     <div class="wrapper">
         <h1 class="text-center text-white my-5">Состав</h1>
-        <div class="container mb-4"
+        <div class="cards container mb-4"
              style=" display: flex;  justify-content: space-evenly;  align-items: center;  margin: 0 auto">
             <div class="card card0">
                 <div class="border">
@@ -318,8 +168,8 @@
                 </div>
             </div>
         </div>
-        <div class="container"
-             style="display: flex;  justify-content: space-evenly;  align-items: center;  margin: 0 auto">
+        <div class="cards container"
+             style=" display: flex;  justify-content: space-evenly;  align-items: center;  margin: 0 auto">
             <div class="card card3">
                 <div class="border">
                     <h2>oliver riedel</h2>
