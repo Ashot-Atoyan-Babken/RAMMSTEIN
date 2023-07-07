@@ -12,7 +12,7 @@ class AlbumService
     {
         try {
             DB::beginTransaction();
-            $data['main_image'] = Storage::disk('public')->put('/images', $data['main_image']);
+            $data['main_image'] = Storage::disk('public')->put('/albums', $data['main_image']);
             $album = Album::firstOrCreate($data);
             DB::commit();
         } catch (\Exception $exception) {
