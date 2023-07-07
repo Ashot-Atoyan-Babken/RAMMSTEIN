@@ -43,7 +43,9 @@
                 </div>
             </div>
             <div class="mx-auto text-center mt-3">
-                <a href="#" class="scroll" style="color:white;font-size:15px;text-decoration: none; transition: all 1s ease-in-out;"><h1>More</h1>
+                <a href="#" class="scroll"
+                   style="color:white;font-size:15px;text-decoration: none; transition: all 1s ease-in-out;"><h1>
+                        More</h1>
                     <img src="{{asset('storage/main/img/svg/free_icon_1.svg')}}"
                          style="width: 30px; height: 30px;transform: rotate(90deg)" alt=""></a>
             </div>
@@ -54,7 +56,8 @@
             <div class="d-flex justify-content-center">
                 <div style="color: white">
                     <h1>Предыстория группы</h1>
-                    <p class="w-75 text-justify">Истоки Rammstein лежат в периоде, предшествовавшем и сопутствовавшем объединению Германии.
+                    <p class="w-75 text-justify">Истоки Rammstein лежат в периоде, предшествовавшем и сопутствовавшем
+                        объединению Германии.
                         Сооснователь группы и ведущий гитарист Рихард Круспе свою музыкальную карьеру начал в 1989 году
                         в Западной Германии в группе Orgasm Death Gimmick, переехав туда из Шверина ,
                         куда вернулся после падения Берлинской стены. Круспе, поклонник Kiss, искал возможности
@@ -64,7 +67,8 @@
                         Die Firma соответственно. В этом составе (с Линдеманном как вокалистом и сочинителем песен) они
                         стали играть под названием Rammstein.
                     </p>
-                    <p class="w-75 text-justify">В 1993 году, когда у группы даже не было названия, она выиграла на Берлинском рок-фестивале право
+                    <p class="w-75 text-justify">В 1993 году, когда у группы даже не было названия, она выиграла на
+                        Берлинском рок-фестивале право
                         на запись в профессиональной студии. 19 февраля 1994 года Rammstein с песнями «Das alte
                         Leid», «Seemann», «Weißes Fleisch», «Rammstein», «Du Riechst So Gut» и «Schwarzes Glas»
                         вчетвером выиграли конкурс молодых групп в Берлине, получив право записи на профессиональной
@@ -77,12 +81,13 @@
                     </p>
 
                 </div>
-                <div >
+                <div>
                     <img src="{{asset('storage/main/img/wp2879797-rammstein-wallpapers.jpg')}}"
                          alt="wp2879797-rammstein-wallpapers.jpg" style="width: 500px; height: 100%;">
                 </div>
             </div>
-            <p style="color: white" class="mt-5 text-justify">Rammstein заметил лидер Nine Inch Nails Трент Резнор, который порекомендовал две их песни для
+            <p style="color: white" class="mt-5 text-justify">Rammstein заметил лидер Nine Inch Nails Трент Резнор,
+                который порекомендовал две их песни для
                 саундтрека к триллеру Дэвида Линча «Шоссе в никуда». Это принесло группе дополнительную
                 известность. В 1995 году Rammstein совершили тур по Европе на разогреве у Clawfinger. На
                 концертах Rammstein демонстрировали яркие пиротехнические шоу. В 1996 году Rammstein впервые
@@ -94,6 +99,47 @@
                 Группа пользуется большим успехом как в Германии, так и за её пределами. Несколько синглов
                 Rammstein попадали в десятку лучших в Германии
             </p>
+        </div>
+    </div>
+    <hr style="border: 5px dashed #ffffff;">
+    <div class="wrapper">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <div><img src="{{asset('storage/main/img/wp2879754.jpg')}}" style="width: 500px;" alt=""></div>
+                <div style="color: white">
+                    <h1>Последующая карьера</h1>
+                    <p class="text-justify w-75">Несколько лет фанаты ждали следующей студийной
+                        работы группы. Такой большой перерыв породил
+                        множество разных слухов, в основном о распаде группы. Однако в 2000 году Rammstein садятся в
+                        студию записывать новый альбом. В 2001 году вышел третий студийный альбом под названием Mutter,
+                        занявший 4-е место в рейтинге лучших индастриал-метал-альбомов по версии журнала Metal
+                        Hammer[11]. Вскоре был проведён тур в его поддержку, после которого количество фанатов Rammstein
+                        значительно увеличилось. Позже были выпущены синглы «Ich will», «Mutter», «Feuer frei!» и
+                        видеоклипы к ним. В 2003 году, к десятилетию своего существования, Rammstein выпускают DVD
+                        Lichtspielhaus c полным собранием клипов и несколькими концертными записями в хорошем
+                        качестве.</p>
+                    <p class="text-justify w-75">В начале 2004 года появилась достоверная информация о скором выходе
+                        нового альбома. Через
+                        несколько месяцев после этого вышли синглы «Mein Teil» и «Amerika». И, наконец, в начале осени
+                        был выпущен четвёртый альбом, названный Reise, Reise, который очень отличается от стилистики
+                        прошлых альбомов группы, что, однако, не помешало ему стать платиновым. Альбом немедленно был
+                        сопровождён туром, в ходе которого выходит сингл с альбома — «Ohne dich». В туре в поддержку
+                        альбома шоу лишилось многих спецэффектов (пластиковый фаллос, горящий плащ), но взамен приобрело
+                        новые.</p>
+
+                </div>
+            </div>
+            <div class="text-justify" style="color: white;width: 960px;" >
+                <p >В начале 2005 года последовал тур вместе с группой Apocalyptica, после
+                    чего вышел сингл «Keine
+                    Lust» и клип к нему. В сентябре выпускается клип, а затем и сингл «Benzin», одноимённая песня с
+                    которого войдёт на следующий, пятый альбом группы. В следующем месяце выходит сам альбом,
+                    получивший название Rosenrot, который содержал 7 старых треков, не вошедших в прошлые альбомы, и
+                    4 новые композиции. В декабре последовал сингл «Rosenrot». В 2006 году вышел концертный DVD
+                    Völkerball, запланированный ещё на 2004-й, но вышедший позднее. Диск получил в основном
+                    положительные отзывы.</p>
+            </div>
+
         </div>
     </div>
 </main>
@@ -110,7 +156,7 @@
     let button = document.querySelector(".scroll");
 
     // Добавляем обработчик события "click" на кнопку
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
         // Определяем текущую позицию прокрутки
         var currentPosition = window.pageYOffset;
 
@@ -155,6 +201,18 @@
 
         // Запускаем первый шаг анимации
         requestAnimationFrame(animationStep);
+    }
+    let pixels = document.querySelector('.pixels')
+    document.onmousemove = function () {
+        document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', '<img src = "{{asset('storage/images/'.'Rammstein_wallpaper_logo.png')}}" id = "heart" > ')
+        let heart = document.querySelector('#heart');
+        heart.style.position = "fixed";
+        document.onmousemove = function (event) {
+            heart.style.left = event.clientX + 20 + 'px';
+            heart.style.top = event.clientY + 20 + 'px';
+            pixels.innerHTML = event.clientX + 'px' + ' ' + event.clientY + 'px'
+        }
+
     }
 </script>
 
