@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Navbar с логотипом и ссылками</title>
-    <!-- Подключение стилей Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body style="background:black;">
-<!-- Навигационное меню -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <!-- Логотип -->
