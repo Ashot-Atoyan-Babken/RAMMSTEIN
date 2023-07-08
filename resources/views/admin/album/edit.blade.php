@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="input-group">
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" name="main_image">
+                                        <input type="file" class="custom-file-input" name="main_image" value="{{$album->main_image}}">
                                         <label class="custom-file-label">виберите изображение</label>
                                     </div>
                                     <div class="input-group-append">

@@ -20,10 +20,10 @@
                             <div class="line"></div>
                         </div>
                         <div class="menu">
-                            <li><a href="#">Плейлист</a></li>
-                            <li><a href="#">картинки</a></li>
-                            <li><a href="#">туры</a></li>
-                            <li><a href="#">контакты</a></li>
+                            <li><a href="{{route('playlist')}}">Плейлист</a></li>
+                            <li><a href="{{route('pictures')}}">картинки</a></li>
+                            <li><a href="{{route('tours')}}">туры</a></li>
+                            <li><a href="{{route('contacts')}}">контакты</a></li>
                         </div>
                     </nav>
                 </div>

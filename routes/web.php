@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', \App\Http\Controllers\Main\IndexController::class)->name('main.index');
 
 Route::get('/admin', \App\Http\Controllers\Admin\Main\IndexController::class)->name('admin');
+
 //albums
 Route::get('/album', \App\Http\Controllers\Admin\Album\IndexController::class)->name('album');
 Route::get('/album/create', \App\Http\Controllers\Admin\Album\CreateController::class)->name('album.create');
@@ -31,6 +31,12 @@ Route::get('/song/{song}/edit', \App\Http\Controllers\Admin\Song\EditController:
 Route::patch('/song/{song}', \App\Http\Controllers\Admin\Song\UpdateController::class)->name('song.update');
 Route::delete('/song/{song}', \App\Http\Controllers\Admin\Song\DeleteController::class)->name('song.destroy');
 
+//main
+Route::get('/', \App\Http\Controllers\Main\IndexController::class)->name('main.index');
+Route::get('/playlist', \App\Http\Controllers\Main\PlaylistController::class)->name('playlist');
+Route::get('/pictures', \App\Http\Controllers\Main\PictureController::class)->name('pictures');
+Route::get('/tours', \App\Http\Controllers\Main\TourController::class)->name('tours');
+Route::get('/contacts', \App\Http\Controllers\Main\ContactController::class)->name('contacts');
 
 //Route::get('/login', \App\Http\Controllers\Auth\LoginController::class)->name('login');
 
