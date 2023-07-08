@@ -38,6 +38,20 @@ Route::get('/pictures', \App\Http\Controllers\Main\PictureController::class)->na
 Route::get('/tours', \App\Http\Controllers\Main\TourController::class)->name('tours');
 Route::get('/contacts', \App\Http\Controllers\Main\ContactController::class)->name('contacts');
 
+//song
+
+Route::prefix('album')->group(function (){
+    Route::get('/album1',\App\Http\Controllers\Song\Album1Controller::class)->name('album1');
+//    Route::get('/album2',\App\Http\Controllers\Song\Album2Controller::class)->name('album2');
+//    Route::get('/album3',\App\Http\Controllers\Song\Album3Controller::class)->name('album3');
+//    Route::get('/album4',\App\Http\Controllers\Song\Album4Controller::class)->name('album4');
+//    Route::get('/album5',\App\Http\Controllers\Song\Album1Controller::class)->name('album5');
+//    Route::get('/album6',\App\Http\Controllers\Song\Album1Controller::class)->name('album6');
+//    Route::get('/album7',\App\Http\Controllers\Song\Album1Controller::class)->name('album7');
+//    Route::get('/album8',\App\Http\Controllers\Song\Album1Controller::class)->name('album8');
+});
+
+
 //Route::get('/login', \App\Http\Controllers\Auth\LoginController::class)->name('login');
 
 Auth::routes();

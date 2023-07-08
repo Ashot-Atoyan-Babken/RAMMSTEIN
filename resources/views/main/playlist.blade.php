@@ -14,9 +14,10 @@
     <div class="container">
         <div class="d-flex align-items-center flex-wrap">
             @foreach($albums as $album)
-                <a href="#" style="text-decoration: none">
+                <a href="{{route('album1')}}" data-id="{{$album->id}}" style="text-decoration: none">
                     <div class="card" style="width: 18rem;flex: 0 0 calc(33.33% - 10px); margin: 10px;">
-                        <img src="{{asset('storage/' . $album->main_image)}}" class="card-img-top" style="height: 450px; object-fit: cover"
+                        <img src="{{asset('storage/' . $album->main_image)}}" class="card-img-top"
+                             style="height: 450px; object-fit: cover"
                              alt="{{$album->title}}">
                         <div class="card-body text-white">
                             <p class="card-text">{{$album->title}}</p>

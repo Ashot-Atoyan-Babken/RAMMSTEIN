@@ -14,9 +14,6 @@ class StoreController extends BaseController
     {
 
         $data = $request->validated();
-        $data['song_name'] = Storage::disk('public')->put('/songs', $data['song_name']);
-        Song::firstOrCreate($data);
-        dd($data);
         $this->service->store($data);
         return redirect()->route('song');
     }
