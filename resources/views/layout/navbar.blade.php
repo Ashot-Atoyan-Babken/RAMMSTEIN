@@ -20,6 +20,7 @@
                             <div class="line"></div>
                         </div>
                         <div class="menu">
+                            <li><a href="{{route('main.index')}}">Главное</a></li>
                             <li><a href="{{route('playlist')}}">Плейлист</a></li>
                             <li><a href="{{route('pictures')}}">картинки</a></li>
                             <li><a href="{{route('tours')}}">туры</a></li>
