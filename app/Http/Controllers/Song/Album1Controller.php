@@ -10,6 +10,7 @@ class Album1Controller extends Controller
 {
     public function __invoke()
     {
+
         $album = Album::find(2);
         $songs = Song::where("album_id", $album->id)->get();
         return view('songs.album1', compact('album', 'songs'));

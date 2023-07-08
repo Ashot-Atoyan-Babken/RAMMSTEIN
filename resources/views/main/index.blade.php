@@ -10,6 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('css/card.css')}}">
+    <link rel="shortcut icon" href="{{asset('storage/images/Rammstein_wallpaper_logo.png')}}" type="image/x-icon">
+
     <title>Rammstein</title>
 </head>
 
