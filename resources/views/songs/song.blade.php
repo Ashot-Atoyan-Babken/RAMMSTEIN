@@ -7,6 +7,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>{{$albums->title}}</title>
 </head>
@@ -25,12 +27,15 @@
             <tbody>
             @foreach ($songs as $index => $music)
                 <tr class="text-center">
-                    <td><img style="width: 50px; height: 50px" src="{{asset('storage/'.$albums->main_image)}}" alt=""></td>
+                    <td><img style="width: 50px; height: 50px" src="{{asset('storage/'.$albums->main_image)}}" alt="">
+                    </td>
                     <td>{{ $music['title'] }}</td>
                     <td>
                         <audio id="audio{{ $index }}" src="{{ asset('storage/'. $music['song_name']) }}"></audio>
-                        <button style="border-radius: 50%" onclick="toggleAudio('audio{{ $index }}', this)"><i
-                                class="fa fa-play-circle"></i></button>
+                        <button style="cursor: pointer"
+                                onclick="toggleAudio('audio{{ $index }}', this)">
+                            <div><i class="fa fa-play"></i></div>
+                        </button>
                     </td>
                 </tr>
             @endforeach
@@ -42,7 +47,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
     function toggleAudio(audioId, button) {
-        var audio = document.getElementById(audioId);
+        let audio = document.getElementById(audioId);
 
         if (audio.paused) {
             playAudio(audio, button);
@@ -52,22 +57,22 @@
     }
 
     function playAudio(audio, button) {
-        var audioElements = document.getElementsByTagName('audio');
+        let audioElements = document.getElementsByTagName('audio');
 
-        for (var i = 0; i < audioElements.length; i++) {
+        for (let i = 0; i < audioElements.length; i++) {
             if (audioElements[i] !== audio) {
                 pauseAudio(audioElements[i], null);
             }
         }
 
         audio.play();
-        button.innerHTML = `<i class="fa fa-pause-circle"></i>`
+        button.innerHTML = `<i class="fa fa-pause"></i>`;
     }
 
     function pauseAudio(audio, button) {
         audio.pause();
         if (button) {
-            button.innerHTML = `<i class="fa fa-play-circle"></i>`
+            button.innerHTML = `<i class="fa fa-play"></i>`;
         }
     }
 </script>

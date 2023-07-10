@@ -157,9 +157,9 @@
                 <div class="border">
                     <h2>Till Lindemann</h2>
                     <div class="icons">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="loco fa fa-instagram" aria-hidden="true"></i>
+                        <i class="loco fa fa-facebook" aria-hidden="true"></i>
+                        <i class="loco fa fa-twitter" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -167,9 +167,9 @@
                 <div class="border">
                     <h2>richard kruspe</h2>
                     <div class="icons">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="loco fa fa-instagram" aria-hidden="true"></i>
+                        <i class="loco fa fa-facebook" aria-hidden="true"></i>
+                        <i class="loco fa fa-twitter" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -177,9 +177,9 @@
                 <div class="border">
                     <h2>paul landers</h2>
                     <div class="icons">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="loco fa fa-instagram" aria-hidden="true"></i>
+                        <i class="loco fa fa-facebook" aria-hidden="true"></i>
+                        <i class="loco fa fa-twitter" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -190,9 +190,9 @@
                 <div class="border">
                     <h2>oliver riedel</h2>
                     <div class="icons">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="loco fa fa-instagram" aria-hidden="true"></i>
+                        <i class="loco fa fa-facebook" aria-hidden="true"></i>
+                        <i class="loco fa fa-twitter" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -200,9 +200,9 @@
                 <div class="border">
                     <h2>Christian Lorenz</h2>
                     <div class="icons">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="loco fa fa-instagram" aria-hidden="true"></i>
+                        <i class="loco fa fa-facebook" aria-hidden="true"></i>
+                        <i class="loco fa fa-twitter" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -210,9 +210,9 @@
                 <div class="border">
                     <h2>christoph schneider</h2>
                     <div class="icons">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="loco fa fa-instagram" aria-hidden="true"></i>
+                        <i class="loco fa fa-facebook" aria-hidden="true"></i>
+                        <i class="loco fa fa-twitter" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -306,10 +306,10 @@
     // Добавляем обработчик события "click" на кнопку
     button.addEventListener("click", function () {
         // Определяем текущую позицию прокрутки
-        var currentPosition = window.pageYOffset;
+        let currentPosition = window.pageYOffset;
 
         // Определяем конечную позицию прокрутки
-        var targetPosition = currentPosition + 900;
+        let targetPosition = currentPosition + 900;
 
         // Запускаем анимацию прокрутки
         scrollToPosition(targetPosition);
@@ -318,24 +318,24 @@
     // Функция для плавной прокрутки к указанной позиции
     function scrollToPosition(targetPosition) {
         // Определяем начальное время анимации
-        var startTime = performance.now();
+        let startTime = performance.now();
 
         // Определяем текущую позицию прокрутки
-        var currentPosition = window.pageYOffset;
+        let currentPosition = window.pageYOffset;
 
         // Вычисляем расстояние, которое нужно прокрутить
-        var distance = targetPosition - currentPosition;
+        let distance = targetPosition - currentPosition;
 
         // Запускаем анимацию с использованием requestAnimationFrame
         function animationStep(currentTime) {
             // Вычисляем прогресс анимации от 0 до 1
-            var progress = (currentTime - startTime) / 3000; // Длительность анимации 500 миллисекунд
+            let progress = (currentTime - startTime) / 3000; // Длительность анимации 500 миллисекунд
 
             // Ограничиваем прогресс до диапазона [0, 1]
             progress = Math.min(progress, 1);
 
             // Вычисляем новую позицию прокрутки
-            var newPosition = currentPosition + (distance * progress);
+            let newPosition = currentPosition + (distance * progress);
 
             // Прокручиваем страницу к новой позиции
             window.scrollTo(0, newPosition);

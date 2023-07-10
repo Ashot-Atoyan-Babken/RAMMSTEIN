@@ -10,9 +10,10 @@
     <title>Playlist</title>
 </head>
 <body>
-<div class="wrapper" style="margin-top: 15vh;">
+<div class="wrapper">
     <div class="container">
-        <div class="d-flex align-items-center flex-wrap">
+        <h1 class="text-white text-center text-uppercase my-5">плейлист</h1>
+        <div class="d-flex align-items-center flex-wrap justify-content-center">
             @foreach($albums as $album)
                 <a href="{{route('songs',"id=$album->id")}}" type="submit" name="{{$album->id}}"
                    style="text-decoration: none">

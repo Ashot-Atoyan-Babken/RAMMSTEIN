@@ -23,7 +23,7 @@
                         <div class="menu">
                             <li><a href="{{route('main.index')}}">Главное</a></li>
                             <li><a href="{{route('playlist')}}">Плейлист</a></li>
-                            <li><a href="{{route('pictures')}}">картинки</a></li>
+                            <li><a href="{{route('pictures')}}">Галерея</a></li>
                             <li><a href="{{route('tours')}}">туры</a></li>
                             <li><a href="{{route('contacts')}}">контакты</a></li>
                         </div>

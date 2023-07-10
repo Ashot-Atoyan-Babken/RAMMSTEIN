@@ -198,10 +198,12 @@ h2 {
     color: grey;
     border-bottom: 1px solid grey;
 }
-.fa {
+
+.loco {
     opacity: 0;
     transition: opacity 1s;
 }
+
 .icons {
     position: absolute;
     fill: #fff;
@@ -215,11 +217,12 @@ h2 {
     justify-content: space-around;
 }
 
-.colll{
+.colll {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .fox {
     perspective: 1000px;
     width: 300px;
@@ -257,6 +260,7 @@ h2 {
     background-color: #fff;
     transform: rotateY(180deg);
 }
+
 @media (max-width: 1440px) {
     .burger {
         display: flex;
@@ -310,7 +314,8 @@ h2 {
     .cards {
         flex-direction: column;
     }
-    .colll{
+
+    .colll {
         flex-direction: column;
 
     }
@@ -319,6 +324,11 @@ h2 {
 @media (max-width: 1010px) {
     .burger {
         display: flex;
+    }
+
+    .content {
+        grid-column: 3 / 4;
+        padding: 0px 0px 0px 30px;
     }
 
     .menu {
@@ -381,10 +391,51 @@ h2 {
     .cii {
         height: 310px !important;
     }
-    .footer{
+
+    .footer {
         flex-direction: column !important;
     }
-    .foot{
+
+    .foot {
         margin-bottom: 15px;
     }
 }
+
+.content__gallery {
+    margin: 0px 0px 40px 0px;
+}
+
+.gallery__items {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery__item {
+    background-color: #fff;
+    padding: 0px 0px 135% 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery__item_big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+}
+.gallery__item:hover img{
+    filter: grayscale(0);
+
+}
+
+
