@@ -35,17 +35,22 @@
 </div>
 
 @yield('content')
-<div class="footer d-flex justify-content-between px-3 align-items-center my-4">
-    <div class="foot logo d-flex align-items-center">
-        <img src="{{asset('storage/images/'.'Rammstein_wallpaper_logo.png')}}" height="60" alt="Логотип">
-        <p style="color: white;font-weight: 900;">RAMMSTEIN</p>
+<div class="wrapper">
+    <div class="container">
+        <div class="footer d-flex justify-content-between px-3 align-items-center my-4">
+            <div class="foot logo d-flex align-items-center">
+                <a href="https://www.instagram.com/rammsteinofficial/" target="_blank"><img src="{{asset('storage/images/'.'Rammstein_wallpaper_logo.png')}}" height="60" alt="Логотип">    </a>
+                <p style="color: white;font-weight: 900;">RAMMSTEIN</p>
 
-    </div>
-    <div style="color: white" class="copywriter d-flex">
-        &copy; 2023 Copywriter
-        by Ashot
+            </div>
+            <div style="color: white" class="copywriter d-flex">
+                &copy; 2023 Copywriter
+                <a class="ml-5" href="https://www.instagram.com/this_is_ashot/" target="_blank">by Ashot</a>
+            </div>
+        </div>
     </div>
 </div>
+
 
 <!-- Подключение скриптов Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

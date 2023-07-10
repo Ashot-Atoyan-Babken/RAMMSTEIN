@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('css/card.css')}}">
     <link rel="shortcut icon" href="{{asset('storage/images/Rammstein_wallpaper_logo.png')}}" type="image/x-icon">
-
     <title>Rammstein</title>
 </head>
 
@@ -157,16 +156,31 @@
             <div class="card card0">
                 <div class="border">
                     <h2>Till Lindemann</h2>
+                    <div class="icons">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
             <div class="card card1">
                 <div class="border">
                     <h2>richard kruspe</h2>
+                    <div class="icons">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
             <div class="card card2">
                 <div class="border">
                     <h2>paul landers</h2>
+                    <div class="icons">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,21 +189,106 @@
             <div class="card card3">
                 <div class="border">
                     <h2>oliver riedel</h2>
+                    <div class="icons">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
             <div class="card card4">
                 <div class="border">
                     <h2>Christian Lorenz</h2>
+                    <div class="icons">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
             <div class="card card5">
                 <div class="border">
                     <h2>christoph schneider</h2>
+                    <div class="icons">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <i class="fa-solid fa-user"></i>
+
+    <div class="wrapper">
+        <h1 class="text-white text-center my-5 text-capitalize">интересных фактов о Rammstein</h1>
+
+        <div class="container colll">
+            <div class="fox ">
+                <div class="card-front">
+                    <p class="text-uppercase">факт &#8470; 1</p>
+                </div>
+                <div class="card-back">
+                    <p class="text-justify" style="font-size: 17px;padding: 10px;">На первом концерте, который проходил
+                        в далеком 1994 году, присутствовало всего 15 человек. В том же году в турне по Европе зрители не
+                        воспринимали всерьез музыку новоиспеченной группы и закидывали ребят бутылками. Публика
+                        объясняла это тем, что немецкий вокал звучал как неприятное и дикое рычание.
+                    </p>
+                </div>
+            </div>
+            <div class="fox">
+                <div class="card-front">
+                    <p class="text-uppercase">факт &#8470; 2</p>
+                </div>
+                <div class="card-back">
+                    <p class="text-justify" style="font-size: 17px;padding: 10px;">В 2001 году Дарон Малакян из System
+                        Of A Down был сессионным гитаристом в группе, заменяя сломавшего ногу ритм-гитариста Пауля
+                        Ландерса.</p>
+                </div>
+            </div>
+            <div class="fox">
+                <div class="card-front">
+                    <p class="text-uppercase">факт &#8470; 3</p>
+                </div>
+                <div class="card-back">
+                    <p class="text-justify" style="font-size: 17px;padding: 10px;">Во время сьемок клипа на песню "Du
+                        Hast" все участники группы получили травмы от слишком мощного взрыва</p>
+                </div>
+            </div>
+        </div>
+        <div class="container colll">
+            <div class="fox ">
+                <div class="card-front">
+                    <p class="text-uppercase">факт &#8470; 4</p>
+                </div>
+                <div class="card-back">
+                    <p class="text-justify" style="font-size: 17px;padding: 10px;">В группе у Тилля Линдеманна самый
+                        яркий образ. Он кажется сильным,грубым,мощным,однако в жизни солист группы предпочитает тишину,а
+                        также любит природу и разводит дома аквариумных рыбок</p>
+                </div>
+            </div>
+            <div class="fox">
+                <div class="card-front">
+                    <p class="text-uppercase">факт &#8470; 5</p>
+                </div>
+                <div class="card-back">
+                    <p class="text-justify" style="font-size: 17px;padding: 10px;">В 2009 году группа Rammstein через
+                        суд
+                        потребовала от властей ФРГ компенсацию в размере 66 тысяч евро за временный запрет альбома
+                        «Liebe ist für alle da». Через шесть месяцев решение департамента
+                        контроля отменил административный суд в Кельне, который счел, что запрет ограничивает свободу
+                        творчества.</p>
+                </div>
+            </div>
+            <div class="fox">
+                <div class="card-front">
+                    <p class="text-uppercase">факт &#8470; 6</p>
+                </div>
+                <div class="card-back">
+                    <p class="text-justify" style="font-size: 17px;padding: 10px;">В честь группы назван метеорит</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>
 </body>

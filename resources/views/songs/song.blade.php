@@ -17,6 +17,7 @@
         <table id="musicTable" class="text-white table table-hover text-nowrap mx-auto w-75">
             <thead>
             <tr class="text-center">
+                <th>Альбом</th>
                 <th>Название</th>
                 <th>Плеер</th>
             </tr>
@@ -24,6 +25,7 @@
             <tbody>
             @foreach ($songs as $index => $music)
                 <tr class="text-center">
+                    <td><img style="width: 50px; height: 50px" src="{{asset('storage/'.$albums->main_image)}}" alt=""></td>
                     <td>{{ $music['title'] }}</td>
                     <td>
                         <audio id="audio{{ $index }}" src="{{ asset('storage/'. $music['song_name']) }}"></audio>
