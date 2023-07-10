@@ -10,7 +10,7 @@ class IndexController extends BaseController
 {
     public function __invoke()
     {
-         $song = Song::all();
+        $song = Song::paginate(10);
         return view('admin.song.index', compact('song'));
     }
 }

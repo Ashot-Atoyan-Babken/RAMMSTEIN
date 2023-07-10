@@ -37,6 +37,7 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Название</th>
+                                        <th>Албом</th>
                                         <th colspan="3" class="text-center">Действие</th>
                                     </tr>
                                     </thead>
@@ -45,6 +46,7 @@
                                         <tr>
                                             <td>{{$songs->id}}</td>
                                             <td>{{$songs->title}}</td>
+                                            <td>{{$songs->album_id}}</td>
                                             <td><a href="{{route('song.edit',$songs->id)}}" class="text-success"><i
                                                         class="fas fa-solid fa-pen"></i></a></td>
                                             <td>
@@ -58,11 +60,16 @@
                                             </td>
                                         </tr>
                                     @endforeach
+
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    {{$song->links()}}
+
                 </div>
             </div>
         </section>
