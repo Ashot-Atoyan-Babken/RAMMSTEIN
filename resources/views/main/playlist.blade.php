@@ -32,5 +32,19 @@
     </div>
 </div>
 </body>
+<script>
+    let pixels = document.querySelector('.pixels')
+    document.onmousemove = function () {
+        document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', '<img src = "{{asset('storage/main/img/svg/'.'380px-Rammstein_logo_2.svg')}}" id = "heart" > ')
+        let heart = document.querySelector('#heart');
+        heart.style.position = "fixed";
+        document.onmousemove = function (event) {
+            heart.style.left = event.clientX + 20 + 'px';
+            heart.style.top = event.clientY + 20 + 'px';
+            pixels.innerHTML = event.clientX + 'px' + ' ' + event.clientY + 'px'
+        }
+
+    }
+</script>
 </html>
 @endsection

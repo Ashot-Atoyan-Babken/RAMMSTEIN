@@ -75,6 +75,28 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <li class="nav-item">
+                        <a href="{{route('tour')}}" class="nav-link">
+                            <i class="nav-icon fas fa-solid fa-icons"></i>
+                            <p>
+                                Туры
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas  fa-solid fa-guitar"></i>
+                            <p>
+                                Концерты
+                            </p>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </aside>
@@ -115,8 +137,8 @@
     });
 </script>
 <style>
-    .custom-file-input:lang(en)~.custom-file-label::after{
-        content:"...";
+    .custom-file-input:lang(en) ~ .custom-file-label::after {
+        content: "...";
     }
 </style>
 </body>

@@ -39,10 +39,18 @@ Route::get('/tours', \App\Http\Controllers\Main\TourController::class)->name('to
 Route::get('/contacts', \App\Http\Controllers\Main\ContactController::class)->name('contacts');
 
 //song
-
 Route::prefix('album')->group(function () {
     Route::get('/song', \App\Http\Controllers\Song\SongController::class)->name('songs');
-//
+});
+
+Route::prefix('tour')->group(function (){
+    Route::get('/tour', \App\Http\Controllers\Admin\Tour\IndexController::class)->name('tour');
+    Route::get('/create', \App\Http\Controllers\Admin\Tour\CreateController::class)->name('tour.create');
+    Route::post('/tour', \App\Http\Controllers\Admin\Tour\StoreController::class)->name('tour.store');
+    Route::get('/{tour}/edit', \App\Http\Controllers\Admin\Tour\EditController::class)->name('tour.edit');
+    Route::patch('/{tour}', \App\Http\Controllers\Admin\Tour\UpdateController::class)->name('tour.update');
+    Route::delete('/{tour}', \App\Http\Controllers\Admin\Tour\DeleteController::class)->name('tour.destroy');
+
 });
 
 

@@ -35,6 +35,7 @@
 </div>
 
 @yield('content')
+
 <div class="wrapper">
     <div class="container">
         <div class="footer d-flex justify-content-between px-3 align-items-center my-4">
