@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Song;
+namespace App\Http\Controllers\Admin\Concert;
 
 use App\Http\Controllers\Controller;
-use App\Service\Album\AlbumService;
-use App\Service\Song\ConcertService;
+use App\Service\Concert\ConcertService;
 
 class BaseController extends Controller
 {

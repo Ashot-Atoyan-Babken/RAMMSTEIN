@@ -10,7 +10,6 @@ class UpdateController extends BaseController
     public function __invoke(UpdateRequest $request, Song $song)
     {
         $data = $request->validated();
-        dd($data);
         $this->service->update($data, $song);
         return redirect()->route('song');
     }
