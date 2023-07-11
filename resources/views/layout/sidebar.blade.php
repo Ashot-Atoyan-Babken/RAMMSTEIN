@@ -15,6 +15,11 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
 </head>
+<style>
+    .custom-file-input:lang(en) ~ .custom-file-label::after {
+        content: "...";
+    }
+</style>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
 
@@ -136,10 +141,6 @@
         bsCustomFileInput.init();
     });
 </script>
-<style>
-    .custom-file-input:lang(en) ~ .custom-file-label::after {
-        content: "...";
-    }
-</style>
+
 </body>
 </html>
