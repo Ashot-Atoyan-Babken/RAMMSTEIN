@@ -6,13 +6,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0"> Песни
+                        <h1 class="m-0"> Концерты
                         </h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{route('admin')}}">Главное</a></li>
-                            <li class="breadcrumb-item active">Песни</li>
+                            <li class="breadcrumb-item active">Концерты</li>
                         </ol>
                         </ol>
                     </div>
@@ -25,7 +25,7 @@
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
                     <div class="col-2 mb-3">
-                        <a href="{{route('song.create')}}" class="btn btn-block btn-primary mt-2">Добавить</a>
+                        <a href="{{route('concert.create')}}" class="btn btn-block btn-primary mt-2">Добавить</a>
                     </div>
                 </div>
                 <div class="row">
@@ -37,20 +37,20 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Название</th>
-                                        <th>Албом</th>
+                                        <th>Тур</th>
                                         <th colspan="3" class="text-center">Действие</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($song as $songs)
+                                    @foreach($concert as $concerts)
                                         <tr>
-                                            <td>{{$songs->id}}</td>
-                                            <td>{{$songs->title}}</td>
-                                            <td>{{$songs->album_id}}</td>
-                                            <td><a href="{{route('song.edit',$songs->id)}}" class="text-success"><i
+                                            <td>{{$concerts->id}}</td>
+                                            <td>{{$concerts->title}}</td>
+                                            <td>{{$concerts->tour_id}}</td>
+                                            <td><a href="{{route('concert.edit',$concerts->id)}}" class="text-success"><i
                                                         class="fas fa-solid fa-pen"></i></a></td>
                                             <td>
-                                                <form action="{{route('song.destroy',$songs->id)}}" method="post">
+                                                <form action="{{route('concert.destroy',$concerts->id)}}" method="post">
                                                     @csrf
                                                     @method('delete')
                                                     <button type="submit" class="border-0 bg-transparent">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div>
-                    {{$song->links()}}
+                    {{$concert->links()}}
 
                 </div>
             </div>

@@ -45,10 +45,10 @@
                                         <tr>
                                             <td>{{$tours->id}}</td>
                                             <td>{{$tours->title}}</td>
-                                            <td><a href="{{route('album.edit',$tours->id)}}" class="text-success"><i
+                                            <td><a href="{{route('tour.edit',$tours->id)}}" class="text-success"><i
                                                         class="fas fa-solid fa-pen"></i></a></td>
                                             <td>
-                                                <form action="{{route('album.destroy',$tours->id)}}" method="post">
+                                                <form action="{{route('tour.destroy',$tours->id)}}" method="post">
                                                     @csrf
                                                     @method('delete')
                                                     <button type="submit" class="border-0 bg-transparent">

@@ -43,15 +43,17 @@ Route::prefix('album')->group(function () {
     Route::get('/song', \App\Http\Controllers\Song\SongController::class)->name('songs');
 });
 
-Route::prefix('tours')->group(function (){
+
+Route::prefix('tour')->group(function () {
     Route::get('/', \App\Http\Controllers\Admin\Tour\IndexController::class)->name('tour');
     Route::get('/create', \App\Http\Controllers\Admin\Tour\CreateController::class)->name('tour.create');
     Route::post('/', \App\Http\Controllers\Admin\Tour\StoreController::class)->name('tour.store');
     Route::get('/{tour}/edit', \App\Http\Controllers\Admin\Tour\EditController::class)->name('tour.edit');
     Route::patch('/{tour}', \App\Http\Controllers\Admin\Tour\UpdateController::class)->name('tour.update');
     Route::delete('/{tour}', \App\Http\Controllers\Admin\Tour\DeleteController::class)->name('tour.destroy');
+    Route::get('/concert', \App\Http\Controllers\Concert\ConcertController::class)->name('concerts');
 });
-Route::prefix('concerts')->group(function (){
+Route::prefix('concerts')->group(function () {
     Route::get('/', \App\Http\Controllers\Admin\Concert\IndexController::class)->name('concert');
     Route::get('/create', \App\Http\Controllers\Admin\Concert\CreateController::class)->name('concert.create');
     Route::post('/', \App\Http\Controllers\Admin\Concert\StoreController::class)->name('concert.store');

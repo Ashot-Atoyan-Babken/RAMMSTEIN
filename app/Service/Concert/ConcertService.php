@@ -2,7 +2,7 @@
 
 namespace App\Service\Concert;
 
-use App\Models\Song;
+use App\Models\Concert;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
@@ -13,7 +13,7 @@ class ConcertService
         try {
             DB::beginTransaction();
             $data['tour_photo'] = Storage::disk('public')->put('/concerts', $data['tour_photo']);
-            Song::firstOrCreate($data);
+            Concert::firstOrCreate($data);
             DB::commit();
         } catch (\Exception $exception) {
             DB::rollBack();

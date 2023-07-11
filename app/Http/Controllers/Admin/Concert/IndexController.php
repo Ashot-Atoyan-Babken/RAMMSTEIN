@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers\Admin\Concert;
 
-use App\Http\Controllers\Controller;
-use App\Models\Album;
 use App\Models\Concert;
-use App\Models\Song;
 
 class IndexController extends BaseController
 {
