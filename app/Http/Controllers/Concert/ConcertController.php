@@ -14,7 +14,7 @@ class ConcertController extends Controller
     {
         $id = request()->get('id');
         $tours = Tour::find($id);
-        $concerts = Concert::where('tour_id', $tours->id)->get()->toArray();
+        $concerts = Concert::where('tour_id', $tours->id)->get();
         return view('concerts.concert', compact('concerts', 'tours'));
     }
 }

@@ -69,6 +69,7 @@ Route::prefix('pictures')->group(function () {
     Route::get('/{picture}/edit', \App\Http\Controllers\Admin\Picture\EditController::class)->name('picture.edit');
     Route::patch('/{picture}', \App\Http\Controllers\Admin\Picture\UpdateController::class)->name('picture.update');
     Route::delete('/{picture}', \App\Http\Controllers\Admin\Picture\DeleteController::class)->name('picture.destroy');
+    Route::get('/photos',\App\Http\Controllers\Photos\PhotosController::class)->name('photos');
 });
 
 

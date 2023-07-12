@@ -13,9 +13,6 @@ class StoreController extends BaseController
     {
 
         $data = $request->validated();
-        $data['photos'] = Storage::disk('public')->put('/pictures', $data['photos']);
-        Pictures::firstOrCreate($data);
-        dd($data);
         $this->service->store($data);
         return redirect()->route('picture');
     }

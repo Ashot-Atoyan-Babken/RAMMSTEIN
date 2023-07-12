@@ -43,9 +43,9 @@
                                     </thead>
                                     <tbody>
                                     @foreach($pictures as $picture)
-                                        <tr>
+                                        <tr class="text-center">
                                             <td>{{$picture->id}}</td>
-                                            <td><img src="{{asset('storage/'.$picture->photos)}}" alt="{{$picture->id}}"></td>
+                                            <td><img class="w-25" src="{{asset('storage/'.$picture->photos)}}" alt="{{$picture->id}}"></td>
                                             <td>{{$picture->concert_id}}</td>
                                             <td><a href="{{route('picture.edit',$picture->id)}}" class="text-success"><i
                                                         class="fas fa-solid fa-pen"></i></a></td>

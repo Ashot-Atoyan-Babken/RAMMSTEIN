@@ -23,7 +23,7 @@
                         <div class="menu">
                             <li><a href="{{route('main.index')}}">Главное</a></li>
                             <li><a href="{{route('playlist')}}">Плейлист</a></li>
-                            <li><a href="{{route('pictures')}}">Галерея</a></li>
+                            <li><a href="{{route('picture')}}">Галерея</a></li>
                             <li><a href="{{route('tours')}}">туры</a></li>
                             <li><a href="{{route('contacts')}}">контакты</a></li>
                         </div>
@@ -40,7 +40,9 @@
     <div class="container">
         <div class="footer d-flex justify-content-between px-3 align-items-center my-4">
             <div class="foot logo d-flex align-items-center">
-                <a href="https://www.instagram.com/rammsteinofficial/" target="_blank"><img src="{{asset('storage/images/'.'Rammstein_wallpaper_logo.png')}}" height="60" alt="Логотип">    </a>
+                <a href="https://www.instagram.com/rammsteinofficial/" target="_blank"><img
+                        src="{{asset('storage/images/'.'Rammstein_wallpaper_logo.png')}}" height="60" alt="Логотип">
+                </a>
                 <p style="color: white;font-weight: 900;">RAMMSTEIN</p>
 
             </div>
