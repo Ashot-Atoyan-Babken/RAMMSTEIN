@@ -11,7 +11,7 @@ class Pictures extends Model
     use HasFactory;
     use SoftDeletes;
     protected $guarded=false;
-    protected $table='concerts';
+    protected $table='pictures';
     public function pictures()
     {
         return $this->hasMany(Pictures::class,'concert_id','id');

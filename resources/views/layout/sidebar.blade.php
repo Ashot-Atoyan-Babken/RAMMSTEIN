@@ -102,12 +102,23 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <li class="nav-item">
+                        <a href="{{route('picture')}}" class="nav-link">
+                            <i class="nav-icon fas fa-solid fa-images"></i>
+                            <p>
+                                Картинки
+                            </p>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </aside>
     @yield('content')
     <footer class="main-footer">
-        <strong>Copyright &copy; 2023 <a href="#">by Ashot</a>.</strong>
+        <strong>Copyright &copy; 2023 <a href="https://www.instagram.com/this_is_ashot/" target="_blank">by Ashot</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 3.2

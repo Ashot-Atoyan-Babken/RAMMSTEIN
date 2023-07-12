@@ -53,6 +53,7 @@ Route::prefix('tour')->group(function () {
     Route::delete('/{tour}', \App\Http\Controllers\Admin\Tour\DeleteController::class)->name('tour.destroy');
     Route::get('/concert', \App\Http\Controllers\Concert\ConcertController::class)->name('concerts');
 });
+
 Route::prefix('concerts')->group(function () {
     Route::get('/', \App\Http\Controllers\Admin\Concert\IndexController::class)->name('concert');
     Route::get('/create', \App\Http\Controllers\Admin\Concert\CreateController::class)->name('concert.create');
@@ -60,6 +61,14 @@ Route::prefix('concerts')->group(function () {
     Route::get('/{concert}/edit', \App\Http\Controllers\Admin\Concert\EditController::class)->name('concert.edit');
     Route::patch('/{concert}', \App\Http\Controllers\Admin\Concert\UpdateController::class)->name('concert.update');
     Route::delete('/{concert}', \App\Http\Controllers\Admin\Concert\DeleteController::class)->name('concert.destroy');
+});
+Route::prefix('pictures')->group(function () {
+    Route::get('/', \App\Http\Controllers\Admin\Picture\IndexController::class)->name('picture');
+    Route::get('/create', \App\Http\Controllers\Admin\Picture\CreateController::class)->name('picture.create');
+    Route::post('/', \App\Http\Controllers\Admin\Picture\StoreController::class)->name('picture.store');
+    Route::get('/{picture}/edit', \App\Http\Controllers\Admin\Picture\EditController::class)->name('picture.edit');
+    Route::patch('/{picture}', \App\Http\Controllers\Admin\Picture\UpdateController::class)->name('picture.update');
+    Route::delete('/{picture}', \App\Http\Controllers\Admin\Picture\DeleteController::class)->name('picture.destroy');
 });
 
 
