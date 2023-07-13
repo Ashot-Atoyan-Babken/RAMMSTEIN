@@ -267,14 +267,13 @@ h2 {
     }
 
 
-
     .menu {
         display: none;
         flex-direction: column;
         padding: 10px;
         position: absolute;
         top: 250px;
-        right: 100vh;
+        right: 45vw;
         width: 100%;
         z-index: 999;
     }
@@ -327,9 +326,11 @@ h2 {
     .burger {
         display: flex;
     }
+
     #cards {
         flex-direction: column;
     }
+
     .content {
         grid-column: 3 / 4;
         padding: 0px 0px 0px 30px;
@@ -341,7 +342,7 @@ h2 {
         padding: 10px;
         position: absolute;
         top: 250px;
-        right: 100vh;
+        right: 30vw;
         width: 100%;
         z-index: 999;
     }
@@ -451,11 +452,24 @@ h2 {
     filter: grayscale(0);
 }
 
-#calc{
+#calc {
     filter: blur(3px);
     transition: all 0.5s ease-in-out;
 
 }
-#calc:hover{
+
+#calc:hover {
     filter: blur(0px);
+}
+
+.momo {
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    }
+.momo:hover{
+    color: grey;
+    border-bottom: 1px solid grey;
 }

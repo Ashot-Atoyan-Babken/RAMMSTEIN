@@ -33,7 +33,9 @@
                             @auth()
                                 <form action="{{route('logout')}}" method="post">
                                     @csrf
-                                 <li><input type="submit" value="Выйти" style="color: white;cursor: pointer;background:#000000 ;border: none;"></li>
+                                    <li><input class="momo" type="submit" value="Выйти"
+                                               >
+                                    </li>
                                 </form>
                             @endauth
                         </div>
