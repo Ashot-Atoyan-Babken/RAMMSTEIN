@@ -26,6 +26,16 @@
                             <li><a href="{{route('pictures')}}">Галерея</a></li>
                             <li><a href="{{route('tours')}}">туры</a></li>
                             <li><a href="{{route('contacts')}}">контакты</a></li>
+                            <li><a href="{{route('feedback.show')}}">отзывы</a></li>
+                            @guest()
+                                <li><a href="{{route('home')}}">войти</a></li>
+                            @endguest
+                            @auth()
+                                <form action="{{route('logout')}}" method="post">
+                                    @csrf
+                                 <li><input type="submit" value="Выйти" style="color: white;cursor: pointer;background:#000000 ;border: none;"></li>
+                                </form>
+                            @endauth
                         </div>
                     </nav>
                 </div>

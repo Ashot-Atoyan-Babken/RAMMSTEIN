@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\CheckRegistatedUser;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -69,7 +70,7 @@ Route::prefix('pictures')->group(function () {
     Route::get('/{picture}/edit', \App\Http\Controllers\Admin\Picture\EditController::class)->name('picture.edit');
     Route::patch('/{picture}', \App\Http\Controllers\Admin\Picture\UpdateController::class)->name('picture.update');
     Route::delete('/{picture}', \App\Http\Controllers\Admin\Picture\DeleteController::class)->name('picture.destroy');
-    Route::get('/photos',\App\Http\Controllers\Photos\PhotosController::class)->name('photos');
+    Route::get('/photos', \App\Http\Controllers\Photos\PhotosController::class)->name('photos');
 });
 
 
@@ -78,3 +79,8 @@ Route::prefix('pictures')->group(function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('feedback')->group(function () {
+    Route::get('/', \App\Http\Controllers\Feedback\FormFeedbackController::class)->name('feedback')->middleware('auth','check');
+    Route::post('/send', \App\Http\Controllers\Feedback\SendFeedbackController::class)->name('feedback.send')->middleware('auth','check');
+    Route::get('/show',\App\Http\Controllers\Feedback\ShowFeedbacksController::class)->name('feedback.show');
+});
