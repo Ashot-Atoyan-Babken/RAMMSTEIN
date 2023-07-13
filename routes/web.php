@@ -34,7 +34,7 @@ Route::delete('/song/{song}', \App\Http\Controllers\Admin\Song\DeleteController:
 //main
 Route::get('/', \App\Http\Controllers\Main\IndexController::class)->name('main.index');
 Route::get('/playlist', \App\Http\Controllers\Main\PlaylistController::class)->name('playlist');
-Route::get('/pictures', \App\Http\Controllers\Main\PictureController::class)->name('pictures');
+Route::get('/picturess', \App\Http\Controllers\Main\PictureController::class)->name('pictures');
 Route::get('/tours', \App\Http\Controllers\Main\TourController::class)->name('tours');
 Route::get('/contacts', \App\Http\Controllers\Main\ContactController::class)->name('contacts');
 

@@ -265,9 +265,9 @@ h2 {
     .burger {
         display: flex;
     }
-#cards{
-    flex-direction: column;
-}
+
+
+
     .menu {
         display: none;
         flex-direction: column;
@@ -327,7 +327,9 @@ h2 {
     .burger {
         display: flex;
     }
-
+    #cards {
+        flex-direction: column;
+    }
     .content {
         grid-column: 3 / 4;
         padding: 0px 0px 0px 30px;
@@ -449,3 +451,11 @@ h2 {
     filter: grayscale(0);
 }
 
+#calc{
+    filter: blur(3px);
+    transition: all 0.5s ease-in-out;
+
+}
+#calc:hover{
+    filter: blur(0px);
+}

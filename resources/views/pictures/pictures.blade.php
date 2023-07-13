@@ -15,7 +15,7 @@
         <h1 class="text-white text-center text-uppercase my-5">{{$concerts->title}}</h1>
         <div class="d-flex align-items-center flex-wrap justify-content-center"  id="cards">
             @foreach($photos as $photo)
-                <div class="card" style="width: 18rem;flex: 0 0 calc(25% - 10px); margin: 10px;">
+                <div class="card" id="calc" style="cursor: pointer; width: 18rem;flex: 0 0 calc(25% - 10px); margin: 10px;">
                     <img src="{{asset('storage/' . $photo->photos)}}" class="card-img-top"
                          style="height: 450px; object-fit: cover">
                 </div>
