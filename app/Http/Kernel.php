@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\CheckRegistatedUser;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 

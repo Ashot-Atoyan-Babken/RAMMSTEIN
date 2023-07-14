@@ -34,10 +34,15 @@
                                 <form action="{{route('logout')}}" method="post">
                                     @csrf
                                     <li><input class="momo" type="submit" value="Выйти"
-                                               >
+                                        >
                                     </li>
                                 </form>
                             @endauth
+                            @if(auth()->check())
+                                @if((int)auth()->user()->role === 0)
+                                    <li><a href="{{route('admin')}}">Админ</a></li>
+                                @endif
+                            @endif
                         </div>
                     </nav>
                 </div>

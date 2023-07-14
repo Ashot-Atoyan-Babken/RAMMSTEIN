@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Concert;
+namespace App\Http\Controllers\Admin\User;
 
 use App\Http\Controllers\Controller;
-use App\Service\Concert\UserService;
+use App\Service\User\UserService;
 
 class BaseController extends Controller
 {

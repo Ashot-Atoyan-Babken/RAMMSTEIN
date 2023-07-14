@@ -44,7 +44,7 @@ Route::prefix('album')->group(function () {
     Route::get('/song', \App\Http\Controllers\Song\SongController::class)->name('songs');
 });
 
-
+//tours
 Route::prefix('tour')->group(function () {
     Route::get('/', \App\Http\Controllers\Admin\Tour\IndexController::class)->name('tour');
     Route::get('/create', \App\Http\Controllers\Admin\Tour\CreateController::class)->name('tour.create');
@@ -54,7 +54,7 @@ Route::prefix('tour')->group(function () {
     Route::delete('/{tour}', \App\Http\Controllers\Admin\Tour\DeleteController::class)->name('tour.destroy');
     Route::get('/concert', \App\Http\Controllers\Concert\ConcertController::class)->name('concerts');
 });
-
+//concerts
 Route::prefix('concerts')->group(function () {
     Route::get('/', \App\Http\Controllers\Admin\Concert\IndexController::class)->name('concert');
     Route::get('/create', \App\Http\Controllers\Admin\Concert\CreateController::class)->name('concert.create');
@@ -63,6 +63,7 @@ Route::prefix('concerts')->group(function () {
     Route::patch('/{concert}', \App\Http\Controllers\Admin\Concert\UpdateController::class)->name('concert.update');
     Route::delete('/{concert}', \App\Http\Controllers\Admin\Concert\DeleteController::class)->name('concert.destroy');
 });
+//pictures
 Route::prefix('pictures')->group(function () {
     Route::get('/', \App\Http\Controllers\Admin\Picture\IndexController::class)->name('picture');
     Route::get('/create', \App\Http\Controllers\Admin\Picture\CreateController::class)->name('picture.create');
@@ -72,15 +73,23 @@ Route::prefix('pictures')->group(function () {
     Route::delete('/{picture}', \App\Http\Controllers\Admin\Picture\DeleteController::class)->name('picture.destroy');
     Route::get('/photos', \App\Http\Controllers\Photos\PhotosController::class)->name('photos');
 });
+//feedback
+Route::prefix('feedback')->group(function () {
+    Route::get('/', \App\Http\Controllers\Feedback\FormFeedbackController::class)->name('feedback')->middleware('auth', 'check');
+    Route::post('/send', \App\Http\Controllers\Feedback\SendFeedbackController::class)->name('feedback.send')->middleware('auth', 'check');
+    Route::get('/show', \App\Http\Controllers\Feedback\ShowFeedbacksController::class)->name('feedback.show');
+});
 
-
-//Route::get('/login', \App\Http\Controllers\Auth\LoginController::class)->name('login');
-
+//users
+Route::prefix('users')->group(function () {
+    Route::get('/', \App\Http\Controllers\Admin\User\IndexController::class)->name('user');
+    Route::get('/create', \App\Http\Controllers\Admin\User\CreateController::class)->name('user.create');
+    Route::post('/', \App\Http\Controllers\Admin\User\StoreController::class)->name('user.store');
+    Route::get('/{user}/edit', \App\Http\Controllers\Admin\User\EditController::class)->name('user.edit');
+    Route::patch('/{user}', \App\Http\Controllers\Admin\User\UpdateController::class)->name('user.update');
+    Route::delete('/{user}', \App\Http\Controllers\Admin\User\DeleteController::class)->name('user.destroy');
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::prefix('feedback')->group(function () {
-    Route::get('/', \App\Http\Controllers\Feedback\FormFeedbackController::class)->name('feedback')->middleware('auth','check');
-    Route::post('/send', \App\Http\Controllers\Feedback\SendFeedbackController::class)->name('feedback.send')->middleware('auth','check');
-    Route::get('/show',\App\Http\Controllers\Feedback\ShowFeedbacksController::class)->name('feedback.show');
-});
+

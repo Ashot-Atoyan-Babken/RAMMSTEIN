@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Dashboard 2</title>
+    <title>Admin</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -37,7 +37,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="#" class="nav-link">Home</a>
+                <a href="{{route('main.index')}}" class="nav-link">Home</a>
             </li>
 
         </ul>
@@ -58,6 +58,17 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <li class="nav-item">
+                        <a href="{{route('user')}}" class="nav-link">
+                            <i class="nav-icon fas fa-thin fa-user-secret"></i>
+                            <p>
+                                Ползователи
+                            </p>
+                        </a>
+                    </li>
+                </ul>
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                     data-accordion="false">
                     <li class="nav-item">
